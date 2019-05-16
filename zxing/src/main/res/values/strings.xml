@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ZXing</string>
+    <string name="scan">扫一扫</string>
+    <string name="prompt1">将取景框对准设备二维码,</string>
+    <string name="prompt2">即可自动扫描。</string>
+    <string name="open">打开</string>
+</resources>

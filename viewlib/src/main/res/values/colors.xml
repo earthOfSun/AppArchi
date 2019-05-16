@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#df3031</color>
+    <color name="colorPrimaryDark">#df3031</color>
+    <color name="colorAccent">#df3031</color>
+
+
+    <!--字体颜色-->
+    <color name="text_normal">#464646</color>
+    <color name="text_hint">#9c9c9c</color>
+    <color name="text_title">#000000</color>
+    <color name="text_light_gray">#777477</color>
+    <color name="text_blue">#0066ff</color>
+    <color name="text_gray">#999999</color>
+    <color name="conut_backgroud">#f7f7f7</color>
+    <color name="text_red">#df3031</color>
+    <color name="text_confirm">#0066ff</color>
+    <color name="text_content">#787878</color>
+    <color name="btn_text_color">#df3031</color>
+    <color name="key_value_color">#717171</color>
+    <color name="light_gray">#c8c8c8</color>
+    <color name="dark_gray">#808080</color>
+    <color name="light_light_gray">#eeeeee</color>
+    <color name="text_gray_88">#888888</color>
+    <color name="text_black">#262626</color>
+    <color name="text_3a">#3a3a3a</color>
+    <color name="text_8d">#8d8d8d</color>
+    <color name="clear_bg">#d2d6dc</color>
+
+
+    <color name="background">#f1f1f1</color>
+    <color name="edit_text_stroke">#cccccc</color>
+
+    <color name="french_gray">#F4F4F4</color>
+    <color name="default_background_color">#F0F0F0</color>
+    <color name="shallow_grary">#ebebeb</color>
+    <color name="text">#ff444444</color>
+    <color name="title">#333333</color>
+    <color name="white">#ffffff</color>
+    <color name="white_45">#72ffffff</color>
+    <color name="white_50">#7fffffff</color>
+    <color name="white_90">#09ffffff</color>
+    <color name="white_60">#99000000</color>
+    <color name="register_line">#c3c3c3</color>
+    <color name="black">#000000</color>
+    <color name="darker_gray">#aaaaaa</color>
+    <color name="transparent">#000000</color>
+    <color name="transparent_55">#55000000</color>
+    <color name="transform">#19ffffff</color>
+    <color name="select">#ff909090</color>
+    <color name="separator">#e2e2e0</color>
+    <color name="color_ef">#efefef</color>
+    <color name="bg_me">#F8F8F8</color>
+    <color name="primaryColor">#df3031</color>
+    <color name="text_mark">#333333</color>
+    <color name="main_color">#df3031</color>
+    <color name="value">#ff909090</color>
+    <color name="pink">#fbcfd0</color>
+    <color name="darker_white">#bedebd</color>
+    <color name="gray_background">#f2f2f2</color>
+
+    <!--toast_layout-->
+    <color name="toast_text_color">#ccffffff</color>
+    <color name="bg_toast">#aa000000</color>
+
+    <!--mefragment-->
+    <color name="ll_activity_background">#fff0eff5</color>
+    <color name="ll_fragment_me_background">#ffc1ddf1</color>
+    <color name="ll_fragment_me_all_background">#F8F8F8</color>
+    <color name="pay_background">#dadada</color>
+    <!--修改的字体颜色-->
+    <color name="modify_color">#0066ff</color>
+    <color name="forget_ps_color">#4b4946</color>
+
+    <!--alertView-->
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <!--窗口背景颜色-->
+    <color name="bgColor_alertview_alert">#f8f8f8</color>
+    <color name="bgColor_alertview_alert_start">#f0f0f0</color>
+    <!--标题颜色-->
+    <color name="textColor_alert_title">#000000</color>
+    <color name="textColor_actionsheet_title">#8f8f8f</color>
+    <!--消息颜色-->
+    <color name="textColor_alert_msg">#000000</color>
+    <color name="null_network">#55000000</color>
+    <color name="textColor_actionsheet_msg">#8f8f8f</color>
+    <!--线条颜色-->
+    <color name="bgColor_divier">#d7d7db</color>
+    <!--取消按钮颜色-->
+    <color name="textColor_alert_button_cancel">#007aff</color>
+    <!--高亮按钮颜色-->
+    <color name="textColor_alert_button_destructive">#ff3b30</color>
+    <!--普通按钮文字颜色-->
+    <color name="textColor_alert_button_others">#007aff</color>
+    <!--点击颜色-->
+    <color name="bgColor_alert_button_press">#EAEAEA</color>
+    <!--actionsheet模式的取消按钮背景颜色-->
+    <color name="bgColor_actionsheet_cancel_nor">#ffffff</color>
+    <!--开关按钮-->
+    <color name="toggle_btn_color">#4ad562</color>
+    <!--退货中-->
+    <color name="goods_state">#f85d00</color>
+    <!--订单背景色-->
+    <color name="order_background">#ffffff</color>
+    <!--发表评论背景色-->
+    <color name="comment_background">#ebebeb</color>
+    <!--地址背景色-->
+    <color name="address_background">#b5b0ad</color>
+
+    <!--删除订单-->
+    <color name="delete_order">#4d4d4d</color>
+
+    <color name="order_split_line">#dedede</color>
+
+
+    <color name="repair_split">#e0e0e0</color>
+
+    <color name="reply_color">#E2E2E0</color>
+
+    <color name="be_show_color">#aa000000</color>
+
+    <color name="bg_pay_location">#dadada</color>
+
+    <color name="split_pay">#e8e8e8</color>
+
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="result_points">#c099cc00</color>
+    <color name="viewfinder_frame">#66FF00</color>
+    <color name="blue">#ff1678b5</color>
+    <color name="transparent_background">#aa787878</color>
+    <color name="bg_hint_color">#b3b3b3</color>
+    <color name="shop_price_color">#ff3d10</color>
+    <!--故障申报-->
+    <!--主色：#484848(黑色)  -->
+    <color name="primary_color">#484848</color>
+    <color name="b3_48">#b3484848</color>
+    <!--浅色-->
+    <color name="light_color_6d">#6d6d6d</color>
+    <color name="btn_bg_green">#22ac38</color>
+    <color name="gray_bf">#bfbfbf</color>
+    <color name="gray_d0">#d0d0d0</color>
+    <color name="task_statue">#Ff4403</color>
+
+    <!--任务标注-->
+    <color name="task_repair">#22ac38</color>
+    <color name="task_inspect">#0886f2</color>
+    <color name="task_maintenance">#ffba00</color>
+    <color name="task_over_date">#7D7D7D</color>
+    <color name="version_tv_color">#2a2a2a</color>
+    <color name="setting_iv_bg">#f0eff5</color>
+    <color name="btn_bg_blue">#00a0e9</color>
+    <color name="divider_gray">#d0d0d0</color>
+    <color name="ornament_color">#ff4403</color>
+    <color name="btn_bg_red">#ff4200</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="sign_text_color">#ffde00</color>
+    <color name="btn_sign_text_color">#85df3031</color>
+</resources>

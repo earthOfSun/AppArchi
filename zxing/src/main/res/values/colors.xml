@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#df3031</color>
+    <color name="text_normal">#464646</color>
+    <color name="separator">#e2e2e0</color>
+    <color name="bgColor_overlay">#60000000</color>
+    <!--窗口背景颜色-->
+    <color name="bgColor_alertview_alert">#f8f8f8</color>
+    <color name="bgColor_alertview_alert_start">#f0f0f0</color>
+    <!--标题颜色-->
+    <color name="textColor_alert_title">#000000</color>
+    <color name="textColor_actionsheet_title">#8f8f8f</color>
+    <!--消息颜色-->
+    <color name="textColor_alert_msg">#000000</color>
+    <color name="textColor_actionsheet_msg">#8f8f8f</color>
+    <!--线条颜色-->
+    <color name="bgColor_divier">#d7d7db</color>
+    <!--主页按钮分割线-->
+    <color name="main_line">#e9e9e9</color>
+    <!--取消按钮颜色-->
+    <color name="textColor_alert_button_cancel">#007aff</color>
+    <!--高亮按钮颜色-->
+    <color name="textColor_alert_button_destructive">#ff3b30</color>
+    <!--普通按钮文字颜色-->
+    <color name="textColor_alert_button_others">#007aff</color>
+    <!--点击颜色-->
+    <color name="bgColor_alert_button_press">#EAEAEA</color>
+    <!--actionsheet模式的取消按钮背景颜色-->
+    <color name="bgColor_actionsheet_cancel_nor">#ffffff</color>
+    <!--toast_layout-->
+    <color name="toast_text_color">#ccffffff</color>
+    <color name="bg_toast">#aa000000</color>
+    <color name="white">#ffffff</color>
+
+    <!--tabLayout-->
+    <color name="default_select_color">#4B6A87</color>
+    <color name="default_divider_color">#8f8f8f</color>
+    <color name="default_normal_color">#11000000</color>
+    <!--二维码-->
+    <color name="text_red">#df3031</color>
+    <color name="title_bg">#1863af</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="result_points">#c099cc00</color>
+    <color name="viewfinder_frame">#66FF00</color>
+    <color name="blue">#ff1678b5</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_bg">#f4f4f4</color>
+    <color name="black">#000000</color>
+    <color name="toast_bg">#484848</color>
+    <color name="common_pressed">#20000000</color>  <!--白色背景按下去的颜色-->
+    <color name="line">#e8e8e8</color>
+    <color name="tv_marker_bg_selected">#b2ff4403</color>
+    <color name="tv_marker_bg">#b2347cc5</color>
+</resources>

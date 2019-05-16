@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <com.cestco.zxing.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90pt"
+            android:background="@color/title_bg">
+
+            <TextView
+                android:id="@+id/close"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20pt"
+                android:textSize="32pt"
+                android:text="关闭"
+                android:textColor="@color/white"
+                android:padding="20pt"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/scan_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/scan"
+                android:textColor="@color/white"
+                android:textSize="36pt"/>
+
+            <TextView
+                android:id="@+id/flash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:text="@string/open"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="28pt"
+                android:textSize="32pt"/>
+            <ImageView
+                    android:layout_width="30pt"
+                    android:layout_height="60pt"
+                    android:src="@mipmap/switch_splash"
+                    android:layout_toLeftOf="@id/flash"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10pt"
+                   />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/prompt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100pt"
+            android:text="@string/prompt1"
+            android:textColor="@color/white"
+            android:textSize="32pt"/>
+
+        <TextView
+            android:id="@+id/prompt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100pt"
+            android:text="@string/prompt2"
+            android:textColor="@color/white"
+            android:textSize="32pt"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mTvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="80pt"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="系统"
+        android:textColor="#fff"
+        android:textSize="32pt" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mSvRootView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/mRlContentNithgLight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="24pt"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/mTvCameLive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30pt"
+                        android:layout_marginBottom="32pt"
+                        android:text="视频监控"
+                        android:textColor="#151616"
+                        android:textSize="30pt" />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="26pt"
+                        android:layout_marginRight="28pt"
+                        android:background="#e6ecf2"
+                        android:gravity="center"
+                        android:paddingLeft="14pt"
+                        android:paddingTop="12pt"
+                        android:paddingRight="14pt"
+                        android:paddingBottom="12pt"
+                        android:text="夏季灯光模式"
+                        android:textColor="#2f93ff"
+                        android:textSize="24pt"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/line2"
+                        style="@style/dividerHorizontalStyle"
+                        android:layout_below="@+id/mTvCameLive" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line2"
+                        android:orientation="horizontal"
+
+                        android:paddingBottom="28pt">
+
+                        <LinearLayout
+                            android:layout_width="0pt"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@mipmap/bg_main_3_line"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/mainSectionTitleStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="录像存储设备" />
+
+                            <TextView
+                                android:id="@+id/mTvMonitorSaveCurrent"
+                                style="@style/mainSectionNumStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <TextView
+                                android:id="@+id/mTvMonitorSaveTotal"
+                                style="@style/mainSectionCountStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="共0路" />
+
+                            <TextView
+                                android:id="@+id/mTvMonitorSaveMalfunction"
+                                style="@style/mainSectionErrorNumStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:text="故障0路" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/mLLCamera"
+                            android:layout_width="0pt"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@mipmap/bg_main_3_line"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/mainSectionTitleStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="摄像机" />
+
+                            <TextView
+                                android:id="@+id/mTvCameraCurrent"
+                                style="@style/mainSectionNumStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <TextView
+                                android:id="@+id/mTvCameraTotal"
+                                style="@style/mainSectionCountStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="共0路" />
+
+                            <TextView
+                                android:id="@+id/mTvCameraMalfunction"
+                                style="@style/mainSectionErrorNumStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:text="故障0路" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0pt"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@mipmap/bg_main_3_line"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/mainSectionTitleStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="视频矩阵" />
+
+                            <TextView
+                                android:id="@+id/mTvMatrixCurrent"
+                                style="@style/mainSectionNumStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <TextView
+                                android:id="@+id/mTvMatrixTotal"
+                                style="@style/mainSectionCountStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="共0台" />
+
+                            <TextView
+                                android:id="@+id/mTvMatrixMalfunction"
+                                style="@style/mainSectionErrorNumStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:text="故障0路" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8pt"
+                    android:background="#f1f5f9"
+                />
+                <RelativeLayout
+                    android:id="@+id/mRlEntranceControl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28pt"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/mTvEntranceControlTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30pt"
+
+                        android:layout_marginBottom="16pt"
+                        android:text="门禁管理"
+                        android:textColor="#151616"
+                        android:textSize="30pt" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="26pt"
+                        android:layout_marginRight="28pt"
+                        android:background="#e6ecf2"
+                        android:gravity="center"
+                        android:paddingLeft="14pt"
+                        android:paddingTop="12pt"
+                        android:paddingRight="14pt"
+                        android:paddingBottom="12pt"
+                        android:text="夏季灯光模式"
+                        android:textColor="#2f93ff"
+                        android:textSize="24pt"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/line3"
+                        style="@style/dividerHorizontalStyle"
+                        android:layout_below="@+id/mTvEntranceControlTitle" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line3"
+                        android:orientation="horizontal"
+                        android:paddingTop="28pt"
+                        android:paddingBottom="28pt">
+
+                        <LinearLayout
+                            android:id="@+id/mLLDoorTotal"
+                            android:layout_width="0pt"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@mipmap/bg_main_2_line"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/mainSectionTitleStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="设备总数" />
+
+                            <TextView
+                                android:id="@+id/mTvDoorTotal"
+                                style="@style/mainSectionNumStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/mLLDoorWarning"
+                            android:layout_width="0pt"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@mipmap/bg_main_2_line"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/mainSectionTitleStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="报警数量" />
+
+                            <TextView
+                                android:id="@+id/mTvDoorWarning"
+                                style="@style/mainSectionNumStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="8pt"
+                    android:background="#f1f5f9"
+                    />
+                <RelativeLayout
+                    android:id="@+id/mRlAudioAsync"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="14pt"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/mTvAudioAsyncTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30pt"
+                        android:layout_marginBottom="32pt"
+                        android:text="同步音频"
+                        android:textColor="#151616"
+                        android:textSize="30pt" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="13pt"
+                        android:layout_marginRight="14pt"
+                        android:background="#e6ecf2"
+                        android:gravity="center"
+                        android:paddingLeft="7pt"
+                        android:paddingTop="6pt"
+                        android:paddingRight="7pt"
+                        android:paddingBottom="6pt"
+                        android:text="夏季灯光模式"
+                        android:textColor="#2f93ff"
+
+                        android:textSize="12pt"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/line4"
+                        style="@style/dividerHorizontalStyle"
+                        android:layout_below="@+id/mTvAudioAsyncTitle" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line4"
+                        android:orientation="horizontal"
+                        android:paddingTop="28pt"
+                        android:paddingBottom="28pt">
+
+                        <LinearLayout
+                            android:layout_width="0pt"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@mipmap/bg_main_2_line"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/mainSectionTitleStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="运行模式" />
+
+                            <TextView
+                                android:id="@+id/mTvAudioMode"
+                                style="@style/mainSectionNumStyle2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="正常" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0pt"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@mipmap/bg_main_2_line"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/mainSectionTitleStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="当前操作区域" />
+
+                            <TextView
+                                android:id="@+id/mTvAudioRegion"
+                                style="@style/mainSectionNumStyle2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="吻别-张学友" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <View
+                    android:id="@+id/mView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="16pt"
+                    android:background="#f1f5f9"
+                    />
+                <RelativeLayout
+                    android:id="@+id/mRlLaserLight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="28pt"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/mTvLaserLightTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30pt"
+                        android:layout_marginBottom="32pt"
+                        android:text="激光灯秀"
+                        android:textColor="#151616"
+                        android:textSize="30pt" />
+
+
+
+                    <TextView
+                        android:id="@+id/mTvLaserMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="14pt"
+                        android:background="#e6ecf2"
+                        android:gravity="center"
+                        android:paddingLeft="7pt"
+                        android:paddingTop="6pt"
+                        android:paddingRight="7pt"
+                        android:paddingBottom="6pt"
+                        android:text="平日晴天模式"
+                        android:textColor="#2f93ff"
+                        android:visibility="gone"
+                        android:textSize="12pt" />
+
+                    <View
+                        android:id="@+id/line5"
+                        style="@style/dividerHorizontalStyle"
+                        android:layout_below="@+id/mTvLaserLightTitle" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line5"
+                        android:orientation="horizontal"
+                        android:paddingTop="28pt"
+                        android:paddingBottom="14pt">
+
+                        <LinearLayout
+                            android:id="@+id/mLLLaserTotal"
+                            android:layout_width="0pt"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@mipmap/bg_main_2_line"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                style="@style/mainSectionTitleStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="总数" />
+
+                            <TextView
+                                android:id="@+id/mTvLaserTotal"
+                                style="@style/mainSectionNumStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/mLLLaserCurrent"
+                            android:layout_width="0pt"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@mipmap/bg_main_2_line"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/mainSectionTitleStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="开启" />
+
+                            <TextView
+                                android:id="@+id/mTvLaserCurrent"
+                                style="@style/mainSectionNumStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

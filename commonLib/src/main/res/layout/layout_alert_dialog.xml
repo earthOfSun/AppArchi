@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="280dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:background="@drawable/bg_white"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <TextView
+        android:id="@+id/mTvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="13dp"
+        android:text="退出登陆"
+        android:textColor="@color/normalColor"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/mTvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:paddingBottom="10dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="5dp"
+        android:text="是否退出登录?"
+        android:textColor="@color/color75Black"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <com.wdy.common.widget.view.alpha.AlphaButton
+            android:id="@+id/mBtnPositive"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="退出"
+            android:textColor="#1B88EE"
+            android:textSize="15sp"/>
+
+        <com.wdy.common.widget.view.alpha.AlphaButton
+            android:id="@+id/mBtnNegative"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="重新登录"
+            android:textColor="#FA3A3A"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</LinearLayout>

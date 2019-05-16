@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--密码输入框-->
+    <declare-styleable name="PSBoxView">
+        <attr name="linesWidth" format="dimension" />
+        <attr name="lineColor" format="color" />
+        <attr name="rect_radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="LineAndLineView">
+        <attr name="imageSrc" format="reference" />
+        <attr name="imageWidth" format="dimension" />
+        <attr name="imageHeight" format="dimension" />
+        <attr name="topViewHeight" format="dimension" />
+        <attr name="imageBg" format="reference|color" />
+
+    </declare-styleable>
+    <!--签到日历-->
+    <declare-styleable name="CalendarView">
+        <attr name="weekBg" format="color" />
+        <attr name="weekFg" format="color" />
+        <attr name="calendar_lineColor" format="color" />
+        <attr name="weekSize" format="dimension" />
+        <attr name="weekHeight" format="dimension" />
+        <attr name="daySize" format="dimension" />
+        <attr name="isScroll" format="boolean" />
+        <attr name="needOval" format="boolean" />
+        <attr name="noSignBg" format="color" />
+        <attr name="signBg" format="color" />
+        <attr name="noSignFg" format="color" />
+        <attr name="signFg" format="color" />
+        <attr name="weekDayHeight" format="dimension" />
+        <attr name="signBitmap" format="reference" />
+        <attr name="onDayBitmap" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DropDownMenu">
+        <!--下划线颜色-->
+        <attr name="underlineColor" format="color"/>
+        <!--分割线颜色(菜单栏)-->
+        <attr name="dividerColor" format="color"/>
+        <!--tab选中颜色-->
+        <attr name="textSelectedColor" format="color"/>
+        <!--tab未选中颜色-->
+        <attr name="textUnselectedColor" format="color"/>
+        <!--tab 背景颜色-->
+        <attr name="menuBackgroundColor" format="color"/>
+        <!--遮罩颜色，一般是半透明-->
+        <attr name="maskColor" format="color"/>
+        <!--字体大小-->
+        <attr name="menuTextSize" format="dimension"/>
+        <!--tab选中状态图标-->
+        <attr name="menuSelectedIcon" format="reference"/>
+        <!--tab未选中状态图标-->
+        <attr name="menuUnselectedIcon" format="reference"/>
+        <!--textview的宽-->
+        <attr name="tabViewWidth" format="dimension"/>
+        <attr name="textPaddingTop" format="dimension"/>
+        <attr name="textPaddingBottom" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="StepView">
+        <!--文字大小-->
+        <attr name="textSize" format="dimension"/>
+        <!--节点远点直径-->
+        <attr name="mRoundSize" format="dimension"/>
+        <!--进行中节点光晕透明度-->
+        <attr name="haloAlpha" format="integer"/>
+        <!--光晕宽度-->
+        <attr name="haloWidth" format="dimension"/>
+        <!--流程线条高-->
+        <attr name="lineHeight" format="dimension"/>
+        <!--已完成节点颜色-->
+        <attr name="doneColor" format="color"/>
+        <!--进行中节点颜色-->
+        <attr name="doingColor" format="color"/>
+        <!--未开始节点颜色-->
+        <attr name="todongColor" format="color"/>
+        <!--显示内容的行间距-->
+        <attr name="rowRpacing" format="dimension"/>
+    </declare-styleable>
+    <!--数字输入键盘-->
+    <declare-styleable name="NumberKeyboard" >
+        <attr name="isLine" format="boolean"/>
+        <attr name="distance" format="dimension"/>
+        <attr name="boundLineColor" format="color"/>
+        <attr name="cutLineColor" format="color"/>
+        <attr name="numberBg" format="color"/>
+        <attr name="numberClickBg" format="color"/>
+        <attr name="clearBg" format="color"/>
+        <attr name="clearClickBg" format="color"/>
+        <attr name="isRom" format="boolean"/>
+        <attr name="delIcon" format="reference"/>
+        <attr name="numRound" format="dimension"/>
+        <attr name="numSize" format="dimension"/>
+        <attr name="isNeedTopBound" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="TitleBar">
+        <attr name="leftImageSrc" format="reference" />
+        <attr name="leftImageWidth" format="dimension" />
+        <attr name="leftImageHeight" format="dimension" />
+
+        <attr name="leftText" format="string" />
+        <attr name="leftTextWidth" format="dimension" />
+        <attr name="leftTextHeight" format="dimension" />
+        <attr name="leftTextSize" format="dimension" />
+        <attr name="leftTextColor" format="color" />
+        <attr name="leftTextBackground" format="reference|color" />
+        <attr name="leftTextGravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+
+        <attr name="leftViewPaddingLeft" format="dimension" />
+        <attr name="leftViewPaddingTop" format="dimension" />
+        <attr name="leftViewPaddingRight" format="dimension" />
+        <attr name="leftViewPaddingBottom" format="dimension" />
+        <attr name="leftViewMarginLeft" format="dimension" />
+        <attr name="leftViewMarginTop" format="dimension" />
+        <attr name="leftViewMarginRight" format="dimension" />
+        <attr name="leftViewMarginBottom" format="dimension" />
+
+        <attr name="middleText" format="string" />
+        <attr name="middleTextWidth" format="dimension" />
+        <attr name="middleTextHeight" format="dimension" />
+        <attr name="middleTextSize" format="dimension" />
+        <attr name="middleTextColor" format="color" />
+        <attr name="middleTextPaddingLeft" format="dimension" />
+        <attr name="middleTextPaddingTop" format="dimension" />
+        <attr name="middleTextPaddingRight" format="dimension" />
+        <attr name="middleTextPaddingBottom" format="dimension" />
+        <attr name="middleTextMarginLeft" format="dimension" />
+        <attr name="middleTextMarginTop" format="dimension" />
+        <attr name="middleTextMarginRight" format="dimension" />
+        <attr name="middleTextMarginBottom" format="dimension" />
+        <attr name="middleTextGravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+
+        <attr name="rightImageSrc" format="reference" />
+        <attr name="rightImageWidth" format="dimension" />
+        <attr name="rightImageHeight" format="dimension" />
+        <attr name="leftImageBackground" format="reference|color" />
+
+        <attr name="rightText" format="string" />
+        <attr name="rightTextWidth" format="dimension" />
+        <attr name="rightTextHeight" format="dimension" />
+        <attr name="rightTextSize" format="dimension" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightTextBackground" format="reference|color" />
+        <attr name="rightTextGravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+
+        <attr name="rightViewPaddingLeft" format="dimension" />
+        <attr name="rightViewPaddingTop" format="dimension" />
+        <attr name="rightViewPaddingRight" format="dimension" />
+        <attr name="rightViewPaddingBottom" format="dimension" />
+        <attr name="rightViewMarginLeft" format="dimension" />
+        <attr name="rightViewMarginTop" format="dimension" />
+        <attr name="rightViewMarginRight" format="dimension" />
+        <attr name="rightViewMarginBottom" format="dimension" />
+
+        <attr name="onLeftViewClick" format="string" />
+        <attr name="onRightViewClick" format="string" />
+    </declare-styleable>
+
+</resources>

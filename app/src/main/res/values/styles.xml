@@ -1,0 +1,405 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:actionBarSize">56dp</item>-->
+        <!--<item name="actionBarSize">56dp</item>-->
+    </style>
+
+    <!--<style name="APP.Splash" parent="translateTheme">-->
+        <!--&lt;!&ndash;<item name="windowNoTitle">true</item>&ndash;&gt;-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="android:background">@mipmap/bg_splash</item>-->
+        <!--&lt;!&ndash;<item name="android:windowFullscreen">true</item>&ndash;&gt;-->
+    <!--</style>-->
+
+    <style name="mStatusImgStyle">
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_width">80dp</item>
+    </style>
+
+    <style name="statusImgStyle2">
+        <item name="android:layout_height">220px</item>
+        <item name="android:layout_width">220px</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="statusContentStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/color60Black</item>
+    </style>
+
+    <style name="statusContentStyle2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">32px</item>
+        <item name="android:padding">26px</item>
+        <item name="android:textColor">@color/color60Black</item>
+    </style>
+
+    <!--android:id="@+id/mLvLoading"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_marginBottom="30px"-->
+    <!--app:mLoadingViewColor="@android:color/black"-->
+    <!--app:mLoadingViewSize="200px"-->
+
+    <style name="statusLoadingStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="mLoadingViewSize">50dp</item>
+        <item name="mLoadingViewColor">@android:color/black</item>
+    </style>
+
+    <style name="statusLoadingStyle2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginBottom">26px</item>
+        <item name="mLoadingViewSize">100px</item>
+        <item name="mLoadingViewColor">@android:color/black</item>
+    </style>
+
+    <!-- 加载弹框样式 -->
+    <style name="LightDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan
+        </item>
+    </style>
+
+    <style name="LightProgressDialog" parent="@style/LightDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="titleBarStyle1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">88px</item>
+        <item name="isAutoFit">true</item>
+    </style>
+
+    <style name="titleBarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="isAutoFit">true</item>
+        <item name="android:background">@mipmap/bg_tool_bar</item>
+        <item name="titleTextSize">16sp</item>
+        <item name="topBarHeight">?attr/actionBarSize</item>
+        <item name="imageViewWidth">?attr/actionBarSize</item>
+    </style>
+
+    <style name="titleBarStyle2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="isAutoFit">true</item>
+        <item name="android:background">@mipmap/bg_tool_bar</item>
+        <item name="titleTextSize">16sp</item>
+        <item name="topBarHeight">?attr/actionBarSize</item>
+    </style>
+
+    <style name="normalTextStyle1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">28px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/normalColor</item>
+        <item name="android:textSize">26px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="normalTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:textColor">#cc151616</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="topTextStyle1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">28px</item>
+        <item name="android:paddingLeft">28px</item>
+        <item name="android:paddingRight">28px</item>
+        <item name="android:paddingBottom">14px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/normalColor</item>
+        <item name="android:textSize">26px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="topTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/normalColor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="centerTextStyle1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">14px</item>
+        <item name="android:paddingLeft">28px</item>
+        <item name="android:paddingRight">28px</item>
+        <item name="android:paddingBottom">14px</item>
+        <item name="android:textColor">@color/normalColor</item>
+        <item name="android:textSize">26px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="centerTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textColor">@color/normalColor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="bottomTextStyle1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/normalColor</item>
+        <item name="android:textSize">26px</item>
+        <item name="android:paddingTop">14px</item>
+        <item name="android:paddingLeft">28px</item>
+        <item name="android:paddingRight">28px</item>
+        <item name="android:paddingBottom">28px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="bottomTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/normalColor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="dividerHorizontalStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/lineColor</item>
+    </style>
+
+    <style name="dividerVerticalStyle">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/lineColor</item>
+    </style>
+
+
+    <style name="NumberProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#3498DB</item>
+
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#3498DB</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Passing_Green">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#70A800</item>
+
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#70A800</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Beauty_Red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#FF3D7F</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#FF3D7F</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Warning_Red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#E74C3C</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#E74C3C</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Relax_Blue">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#6DBCDB</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#6DBCDB</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Grace_Yellow">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#FFC73B</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#FFC73B</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Funny_Orange">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#FF530D</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#FF530D</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Twinkle_Night">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#ECF0F1</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#ECF0F1</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+    <style name="mainSectionTitleStyle">
+        <item name="android:textColor">#151616</item>
+        <item name="android:textSize">30pt</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginTop">32pt</item>
+        <item name="android:layout_marginBottom">40pt</item>
+    </style>
+
+    <style name="mainSectionNumStyle">
+        <item name="android:textColor">#2f93ff</item>
+        <item name="android:textSize">52pt</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="mainSectionNumStyle2">
+        <item name="android:textColor">#2f93ff</item>
+        <item name="android:textSize">30pt</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginBottom">40pt</item>
+    </style>
+
+    <style name="mainSectionCountStyle">
+        <item name="android:textColor">#99151616</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <style name="mainSectionErrorNumStyle">
+        <item name="android:textColor">#ff8a00</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginBottom">14dp</item>
+    </style>
+
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference"/>
+    </declare-styleable>
+</resources>

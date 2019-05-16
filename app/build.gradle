@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion versions.compileSdkVersion
+    defaultConfig {
+        applicationId "com.cestco.apparchi"
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    testImplementation "junit:junit:$versions.junitVersion"
+    androidTestImplementation "com.android.support.test:runner:$versions.runnerVersion"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$versions.espressoVersion"
+    api "com.android.support:design:$versions.support"
+    implementation "com.android.support.constraint:constraint-layout:$versions.constaintVersion"
+
+    implementation project(':dialoglibrary')
+    implementation project(':commonUtilLib')
+    implementation project(':commonLib')
+    implementation project(':zxing')
+    implementation project(':matisse')
+    implementation project(':pickerview')
+    implementation project(':viewlib')
+    implementation project(':voicelib')
+}

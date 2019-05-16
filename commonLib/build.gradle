@@ -1,0 +1,91 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+//apply from:"deployBintray.gradle"
+//apply plugin: 'kotlin-kapt'
+//apply plugin: 'org.greenrobot.greendao'
+
+//添加 kotlin parcelable 注释快捷方法
+androidExtensions {
+    experimental = true
+}
+
+android {
+    compileSdkVersion versions.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode versions.versionCode
+        versionName versions.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi-v7a", "x86", "arm64-v8a", " x86_64"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //noinspection GradleCompatible
+    implementation "com.android.support:appcompat-v7:$versions.support"
+    testImplementation "junit:junit:$versions.junitVersion"
+    androidTestImplementation "com.android.support.test:runner:$versions.runnerVersion"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$versions.espressoVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api "com.android.support:design:$versions.support"
+
+    //Rxjava
+    api "io.reactivex.rxjava2:rxkotlin:$versions.rxKotlin"
+    api "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid"
+
+    //okhttp && retrofit
+    api "com.squareup.retrofit2:retrofit:$versions.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$versions.retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofitVersion"
+    api "com.squareup.okhttp3:okhttp:$versions.okHttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$versions.okHttpVersion"
+    api "org.jetbrains.anko:anko-commons:$versions.ankoVersion"
+    api "com.android.support:multidex:$versions.multidex"
+
+    //    Logger
+    implementation "com.orhanobut:logger:$versions.loggerVersion"
+
+    //RxLifecycle
+    api "com.trello.rxlifecycle2:rxlifecycle-kotlin:$versions.rxLifecycleVersion"
+
+    //If you want pre-written Activities and Fragments you can subclass as providers
+    api "com.trello.rxlifecycle2:rxlifecycle-components:$versions.rxLifecycleVersion"
+
+    //alibaba Aroute
+    api "com.alibaba:arouter-api:$versions.ArouterVersion"
+//    kapt  "com.alibaba:arouter-compiler:$versions.aRouteCompilerVersion"
+
+    api "com.alibaba:fastjson:$versions.fastJson"
+
+    api "org.greenrobot:eventbus:$versions.eventBus"
+    api "com.scwang.smartrefresh:SmartRefreshLayout:$versions.smartRefresh"
+    api "com.github.bumptech.glide:glide:$versions.glideVersion"
+
+    api "com.google.code.gson:gson:$versions.gsonVersion"
+
+//    api "com.blankj:utilcode:$versions.utilcode"
+}

@@ -1,0 +1,1 @@
+include ':app', ':dialoglibrary',':commonLib', ':viewlib',':commonUtilLib', ':zxing',':matisse',':wheelview',':pickerview', ':picturehandlelib', ':voicelib'

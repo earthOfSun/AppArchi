@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">上虞城建</string>
+    <string name="network_is_not_connect">网络不可用</string>
+    <string name="phone_error">号码错误</string>
+    <string name="get_verification_again">重发验证码</string>
+    <string name="string_permission_help_text">当前应用缺少必要权限，请点击“设置”-“权限”打开所需权限，最后点击两次后退按钮，即可返回</string>
+    <string name="quit">退出</string>
+    <string name="settings">设置</string>
+    <string name="permission_request">权限请求</string>
+    <string name="help">帮助</string>
+    <string name="please_check_network">请检查网络</string>
+    <string name="downline">已下线</string>
+    <string name="exit">退出</string>
+    <string name="login_in_again">重新登陆</string>
+    <string name="account_login_another_place">您的账号已在其他终端登录,请重新登录</string>
+    <string name="cannot_find_info">执行异常，请重试</string>
+    <string name="error_connect">连接失败,请重试</string>
+    <string name="please_input_search_key">请输入查询内容</string>
+</resources>

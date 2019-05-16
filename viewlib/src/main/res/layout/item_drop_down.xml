@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_drop_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:ellipsize="middle"
+        android:maxLength="6"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="test"
+        android:textSize="14dp"/>
+
+    <ImageView
+        android:id="@+id/iv_up_or_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+
+        android:layout_toRightOf="@id/tv_drop_down"
+        android:src="@mipmap/down"
+        />
+</RelativeLayout>
